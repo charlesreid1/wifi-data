@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Demo - charlesreid1</title>
+<meta name="generator" content="MediaWiki 1.25.1" />
+<link rel="shortcut icon" href="/w/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="charlesreid1 (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://charlesreid1.com/w/api.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="/wiki/Demo" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" />
+<link rel="alternate" type="application/atom+xml" title="charlesreid1 Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="https://charlesreid1.com/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.ui.button&amp;only=styles&amp;skin=Bootstrap2&amp;*" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/w/skins/Bootstrap2/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/w/skins/Bootstrap2/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/w/skins/Bootstrap2/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/w/skins/Bootstrap2/IE70Fixes.css?303" media="screen" /><![endif]-->
+<link rel="stylesheet" href="/w/skins/Bootstrap2/bootstrap.css?303" />
+<link rel="stylesheet" href="/w/skins/Bootstrap2/slate.css?303" />
+<link rel="stylesheet" href="/w/skins/Bootstrap2/main.css?303" />
+<link rel="stylesheet" href="/w/skins/Bootstrap2/dox.css?303" /><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:b36fd1c042133c9c9b60260f7c29b237 */</style>
+<script src="https://charlesreid1.com/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=Bootstrap2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Demo","wgTitle":"Demo","wgCurRevisionId":8754,"wgRevisionId":8754,"wgArticleId":1719,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wireless","Kali","SQL","Python"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Demo","wgRelevantArticleId":1719,"wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:a5c52c063dc436c1ca7c9f456936a5e9 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Demo skin-Bootstrap2 action-view">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Charles Martin Reid - Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <!--
+    CSS styles
+    <link href="/w/skins/Bootstrap2/bootstrap.css"          rel="stylesheet" type="text/css">
+    <link href="/w/skins/Bootstrap2/slate.css"              rel="stylesheet" type="text/css">
+    -->
+
+    <!--
+    my CSS styles
+    <link href="/w/skins/Bootstrap2/main.css"            rel="stylesheet" type="text/css">
+    <link href="/w/skins/Bootstrap2/dox.css"             rel="stylesheet" type="text/css">
+    -->
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--
+            http://www.w3schools.com/bootstrap/bootstrap_case_navigation.asp
+            -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>  
+                <span class="icon-bar"></span>  
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">charlesreid1.com</a>
+        </div>
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <!--
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="/wiki">Wiki</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Me</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<div class="container">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+    <nav class="wiki navbar navbar-default">
+    <div class="container-fixed">
+        <div class="navbar-header">
+            <a href="/wiki/" class="navbar-brand">
+            charlesreid1.com wiki
+            </a>
+        </div>
+        <div>
+            <ul class="wiki nav navbar-nav">
+                <li class="wiki" id="ca-nstab-main" class="selected"><a href="/wiki/Demo">Page</a></li><li class="wiki" id="ca-talk" class="new"><a href="/w/index.php?title=Talk:Demo&amp;action=edit&amp;redlink=1">Discussion</a></li><li class="wiki" id="ca-viewsource"><a href="/w/index.php?title=Demo&amp;action=edit">View source</a></li><li class="wiki" id="ca-history"><a href="/w/index.php?title=Demo&amp;action=history" title="Past revisions of this page">History</a></li>            </ul>
+        </div>
+    </div>
+    </nav>
+
+
+    <div class="row">
+        <div class="span10 offset1">
+
+<!--
+=========================
+Begin MediaWiki content
+=========================
+-->
+<div class="mw_content">
+
+    <div id="content" >
+
+    <!-- page title -->
+    <div class="page-header">
+        <h1 id="firstHeading" class="firstHeading">
+        Demo        </h1>
+    </div><!--div page-header-->
+    
+    <!-- pre-article stuff -->
+    <div id="bodyContent">
+        <h3 id="siteSub">From charlesreid1</h3>
+        <div id="contentSub">        </div>
+            
+        <!-- article -->
+        
+        <!-- begin mediawiki content -->
+        <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Demo for first meeting of <a href="/wiki/Wireless_Research_Project" title="Wireless Research Project">Wireless Research Project</a>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Wireless_Networks"><span class="tocnumber">1</span> <span class="toctext">Wireless Networks</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#SQLite_Database"><span class="tocnumber">2</span> <span class="toctext">SQLite Database</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Insertion"><span class="tocnumber">2.1</span> <span class="toctext">Insertion</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Viewing"><span class="tocnumber">2.2</span> <span class="toctext">Viewing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Data_Analysis"><span class="tocnumber">3</span> <span class="toctext">Data Analysis</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Wireless_Networks">Wireless Networks</span></h1>
+<p>We will begin by gathering data about wireless networks around us.
+</p><p>This can be done with a number of different programs. I'll use Aircrack's <code>airodump-ng</code> utility.
+</p><p>Start by putting the wireless card in monitor mode:
+</p>
+<pre>
+iwconfig # without wireless card pluged in
+iwconfig # with wireless card plugged in
+ifconfig wlan1 down 
+ifconfig wlan1 up
+</pre>
+<p>Now begin monitoring, and dump information from the wireless card:
+</p>
+<pre>
+airmon-ng start wlan1
+airodump-ng wlan1 -w output_file
+</pre>
+<p>Now you can open output_file.csv with a script or with a spreadsheet viewer.
+</p>
+<h1><span class="mw-headline" id="SQLite_Database">SQLite Database</span></h1>
+<p>Use SQLite, and you don't have to install anything - it comes with <a href="/wiki/Kali" title="Kali" class="mw-redirect">Kali</a>.
+</p>
+<h2><span class="mw-headline" id="Insertion">Insertion</span></h2>
+<p>In one window, running a script that inserts a random record every 2 seconds.
+</p><p>Insertion script is as follows:
+</p>
+<pre>
+import sqlite3
+import time
+import string
+import random 
+
+# define a function that generates random data (letters)
+def id_generator(size=6, chars=string.ascii_uppercase):
+	&quot;&quot;&quot;This returns a random string&quot;&quot;&quot;
+	return ''.join(random.choice(chars) for _ in range(size))
+
+# define a functionthat generates random mac addresses
+def mac_generator():
+	&quot;&quot;&quot;This returns a random MAC address&quot;&quot;&quot;
+	return ''.join([ id_generator(2)+':' for i in range(5) ]+[id_generator(2)])
+
+if __name__==&quot;__main__&quot;:
+
+	# connect to sqlite database
+	conn = sqlite3.connect('wifidata.db')
+	
+	# get a pointer in the database
+	c = conn.cursor()
+	
+	try:
+		# create the table
+		c.execute(&quot;CREATE TABLE wifidata (device_key, device_mac, device_signalstr)&quot;)
+	except sqlite3.OperationalError:
+		pass
+	
+	# now insert 60 random records into the database
+	for z in range(60):
+		time.sleep(1)
+	
+		random_key = id_generator(size=8)
+		random_mac = mac_generator()
+		random_strength = random.randint(1,100)
+	
+		print &quot;Inserting record (%s,&#160;%s,&#160;%d)&quot;%(random_key, random_mac, random_strength)
+	
+		c.execute( &quot;INSERT INTO wifidata VALUES ('%s', '%s',&#160;%d);&quot;%(random_key, random_mac, random_strength) )
+	
+		# save (commit) the changes
+		conn.commit()
+	
+	# close the connection
+	conn.close()
+
+</pre>
+<p>and a screenshot of the script in action:
+</p><p><a href="/wiki/File:SqliteInsert.png" class="image"><img alt="SqliteInsert.png" src="/w/images/thumb/e/ed/SqliteInsert.png/500px-SqliteInsert.png" width="500" height="338" srcset="/w/images/e/ed/SqliteInsert.png 1.5x, /w/images/e/ed/SqliteInsert.png 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="Viewing">Viewing</span></h2>
+<p>In another window, running a script that queries the database and shows its contents
+</p><p>Display script is as follows:
+</p>
+<pre>
+import sqlite3
+import time
+
+# connect to sqlite database
+conn = sqlite3.connect('wifidata.db')
+c = conn.cursor()
+
+for row in c.execute('SELECT * FROM wifidata;'):
+	print row
+
+conn.close()
+</pre>
+<p>and that script in action:
+</p><p><a href="/wiki/File:SqliteView.png" class="image"><img alt="SqliteView.png" src="/w/images/thumb/f/f2/SqliteView.png/500px-SqliteView.png" width="500" height="338" srcset="/w/images/f/f2/SqliteView.png 1.5x, /w/images/f/f2/SqliteView.png 2x" /></a>
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Data_Analysis">Data Analysis</span></h1>
+<p>The platform of data analysis will determine the kind of analysis that can be done.
+</p><p>As a first-pass, the data dumped by airomon-ng was imported into Google Spreadsheets and I plotted a few histograms and scatter plots.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.017 seconds
+Real time usage: 0.018 seconds
+Preprocessor visited node count: 55/1000000
+Preprocessor generated node count: 104/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1719-0!*!0!!en!5!* and timestamp 20160205005144 and revision id 8754
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://charlesreid1.com/w/index.php?title=Demo&amp;oldid=8754">https://charlesreid1.com/w/index.php?title=Demo&amp;oldid=8754</a>"</div>
+        
+        <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Wireless" title="Category:Wireless">Wireless</a></li><li><a href="/wiki/Category:Kali" title="Category:Kali">Kali</a></li><li><a href="/w/index.php?title=Category:SQL&amp;action=edit&amp;redlink=1" class="new" title="Category:SQL (page does not exist)">SQL</a></li><li><a href="/wiki/Category:Python" title="Category:Python">Python</a></li></ul></div></div>    </div><!-- end bodyContent -->
+    
+    </div><!--div special page attributes-->
+<!--
+=========================
+End MediaWiki content
+=========================
+-->
+</div><!--div mw content-->
+
+
+    </div><!--div span10 -->
+</div><!--row-->
+
+
+
+<!--
+==========================================================
+====================== Begin Wiki Footer =================
+==========================================================
+-->
+
+
+    <!-- Start of CMR Wiki StatCounter Code -->
+    <script type="text/javascript">
+        var sc_project=6067223; 
+        var sc_invisible=1; 
+        var sc_security="413aeab9"; 
+    </script>
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+    <!-- End of StatCounter Code -->
+
+
+
+<footer id="contentinfo" class="body">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center><hr style="text-align:right;margin-right:0"></center>
+<p>&nbsp;</p>
+<p style="text-align: center">
+    <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+    </span>
+    Made from the command line with vim by 
+    <a href="http://charlesreid1.com">charlesreid1</a><br />
+    with help from <a href="http://d3js.org">D3.js</a>, <a href="http://angularjs.org">Angular.js</a>, and <a href="http://getpelican.com">Pelican</a>.
+</p>
+
+<script type="text/javascript" src="/w/skins/Bootstrap2/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="/w/skins/Bootstrap2/bootstrap-3.3.4.js"></script>
+
+</footer><!-- /#contentinfo -->
+
+
+
+</body>
+</html>
+
+
+
