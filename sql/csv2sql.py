@@ -61,6 +61,30 @@ def print_ap_head(ap_header,ap_data):
 
 
 
+
+
+'''
+['BSSID', 'First time seen', 'Last time seen', 'channel', 'Speed', 'Privacy', 'Cipher', 'Authentication', 'Power', 
+   '# beacons', '# IV', 'LAN IP', 'ID-length', 'ESSID', 'Key']
+
+0  BSSID = string
+1  First time seen = string
+2  Last time seen = string
+3  Channel = int
+4  Speed = int
+5  Privacy = string
+6  Cipher = string
+7  Auth = string
+8  Power = int
+9  # beacons = int
+10 # iv = int
+11 lan ip = string [DROP]
+12 id-length = int [DROP]
+13 essid = string
+14 key = string [DROP]
+'''
+
+
 def make_ap_sql_record(ap_header,ap_data):
     """
     Tokenize the two lists of AP header and data lines
@@ -79,6 +103,11 @@ def make_ap_sql_record(ap_header,ap_data):
 
     head_tokens = [a.strip() for a in ap_header.split(",")]
 
+    # Remove some columns
+    head_tokens.remove('LAN IP')
+    head_tokens.remove('ID-length')
+    head_tokens.remove('Key')
+
     ap_head_fields = "\'" + "\',\'".join(head_tokens) + "\'"
 
     sql_create_table = "CREATE TABLE wifidata (%s)"%(ap_head_fields)
@@ -87,12 +116,13 @@ def make_ap_sql_record(ap_header,ap_data):
 
     try:
         c.execute(sql_create_table)
-        print " [+] Success creating table."
+        #print " [+] Success creating table."
     except sqlite3.OperationalError:
         pass
 
     conn.commit()
-    
+
+
 
     # Populate data
     for ap in ap_data:
@@ -107,7 +137,7 @@ def make_ap_sql_record(ap_header,ap_data):
 
         try:
             c.execute(sql_insert)
-            print " [+] Success inserting row."
+            #print " [+] Success inserting row."
         except sqlite3.OperationalError:
             pass
 
