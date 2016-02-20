@@ -1,3 +1,4 @@
+from oops import oops
 
 def extract_csv_data(csv_file):
     """
@@ -34,3 +35,6 @@ def extract_csv_data(csv_file):
         exit(1)
 
     return ap_header, ap_data, client_header, client_data
+
+if __name__=="__main__":
+    oops()

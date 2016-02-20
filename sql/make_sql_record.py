@@ -1,12 +1,6 @@
 import os
 import sqlite3
-
-
-class Stuff(object):
-    def __init__(self):
-        pass
-
-
+from oops import oops
 
 
 def make_ap_sql_record(ap_header,ap_data):
@@ -140,19 +134,23 @@ def make_ap_sql_record(ap_header,ap_data):
 
 
     # ---------
-    # Insert data, using proper types
+    # Insert AP data into SQL database, using proper types
 
     for ap_dat in ap_data:
 
+        # Final statement will look like this:
         # INSERT INTO wifidata(key1, key2, key3) VALUES(v1, v2, v3)
 
-        sql_insert = "INSERT INTO wifidata("
+        sql_insert = 'INSERT INTO wifidata('
+
+        # add the name of each column
         for key in types.keys():
             sql_insert += "\'" + key + "\',"
-        
         # remove last comma
         sql_insert = sql_insert[:-1]
         sql_insert += ") VALUES ("
+
+
 
         for key in types.keys():
             column_type = types[key]
@@ -166,22 +164,77 @@ def make_ap_sql_record(ap_header,ap_data):
                 value_string = ap_tokens[ix]
 
             elif column_type=='TEXT':
-                value_string = "\'"+stripslashes(ap_tokens[ix])+"\'"
+                tempstring = ap_tokens[ix]
+
+
+                value_string = ' \'?\'',tempstring #"+tempstring+"\'"
 
             sql_insert += value_string + ","
 
-            #print("%s : %s [%s]"%(key,value,column_type))
+            print sql_insert
 
-        sql_insert = sql_insert[:-1]
-        sql_insert += ")"
 
-        print sql_insert
 
-    #conn.commit()
+    ### ################################
+    ### ### The code below tries to turn strings
+    ### ### into lists and back into strings and does not
+    ### ### deal at all with quotes or slashes or anything.
+
+    ### for ap_dat in ap_data:
+
+    ###     # INSERT INTO wifidata(key1, key2, key3) VALUES(v1, v2, v3)
+
+    ###     sql_insert = "INSERT INTO wifidata("
+    ###     for key in types.keys():
+    ###         sql_insert += "\'" + key + "\',"
+    ###     
+    ###     # remove last comma
+    ###     sql_insert = sql_insert[:-1]
+    ###     sql_insert += ") VALUES ("
+
+    ###     for key in types.keys():
+    ###         column_type = types[key]
+    ###         ix = ap_header_tokens.index(key)
+    ###         ap_tokens = [z.strip() for z in ap_dat.split(",")]
+
+    ###         if column_type=='DATETIME':
+    ###             value_string = "date('%s')"%(ap_tokens[ix])
+
+    ###         elif column_type=='INTEGER':
+    ###             value_string = ap_tokens[ix]
+
+    ###         elif column_type=='TEXT':
+    ###             tempstring = ap_tokens[ix]
+    ###             value_string = "\'"+tempstring+"\'"
+
+    ###         sql_insert += value_string + ","
+
+    ###         #print("%s : %s [%s]"%(key,value,column_type))
+
+    ###     sql_insert = sql_insert[:-1]
+    ###     sql_insert += ")"
+
+    ###     print sql_insert
+
+    ### #conn.commit()
+
+
+
+
 
     conn.close()
 
-    # now populate SQL db with rows of AP data 
+    # Done inserting AP data into SQL database.
+    # ---------
+
+
+
+    # ---------
+    # Insert client data into SQL database, using proper types
+
+    for client_dat in client_data:
+
+        pass
 
     a = 0
 
@@ -190,6 +243,6 @@ def make_client_sql_record(client_header,client_data):
     pass
 
 
-
-
+if __name__=="__main__":
+    oops()
 
