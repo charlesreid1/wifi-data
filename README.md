@@ -56,5 +56,14 @@ Each task corresponds to a directory:
 
 * `analysis/` - scripts for mathematical analysis of wifi data, extracted from SQL database
 
+Some additional code is located in:
+
+* `pywifi/` - scripts for doing wifi stuff with Python
+
 * `datetime/` - explanatory code for dealign with dates and times in Python
+
+
+
+
+
 
