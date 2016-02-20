@@ -6,6 +6,7 @@ conn = sqlite3.connect('wifidata.db')
 c = conn.cursor()
 
 for row in c.execute("SELECT * FROM wifidata;"):
-    print row
+    print(row)
 
 conn.close()
+
