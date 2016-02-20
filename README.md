@@ -48,13 +48,22 @@ The breakdown of tasks needed to implement a data pipeline for a distributed sen
 
 3. Scripts to extract, analyze, and crunch data
 
-There are also illustrative scripts. Each task corresponds to a directory: 
+Each task corresponds to a directory: 
 
-Task 1, capturing wireless data, is done by scripts in `pi/`
+* `pi/` - scripts for capturing wireless data with the Raspberry Pi
 
-Task 2, processing CSV files to turn into SQL, is done by scripts in `process_csv/`
+* `process_csv/` - scripts for processing CSV files to turn them into SQL records
 
-Task 3, analysis of data, is done by scripts in `analysis/`
+* `analysis/` - scripts for mathematical analysis of wifi data, extracted from SQL database
 
-Assorted illustrative scripts demonstrating dates and times in Python in `datetime/`
+Some additional code is located in:
+
+* `pywifi/` - scripts for doing wifi stuff with Python
+
+* `datetime/` - explanatory code for dealign with dates and times in Python
+
+
+
+
+
 
