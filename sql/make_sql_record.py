@@ -146,6 +146,7 @@ def make_ap_sql_record(ap_header,ap_data):
         # add the name of each column
         for key in types.keys():
             sql_insert += "\'" + key + "\',"
+
         # remove last comma
         sql_insert = sql_insert[:-1]
         sql_insert += ") VALUES ("
@@ -164,15 +165,20 @@ def make_ap_sql_record(ap_header,ap_data):
                 value_string = ap_tokens[ix]
 
             elif column_type=='TEXT':
-                tempstring = ap_tokens[ix]
+                temp_string = ap_tokens[ix]
+                temp_string = temp_string.replace('\"','')
+                temp_string = temp_string.replace('\\','\\\\')
+                temp_string = temp_string.replace('\'','\\\'')
 
-
-                value_string = ' \'?\'',tempstring #"+tempstring+"\'"
+                value_string = "'"+temp_string+"'"
 
             sql_insert += value_string + ","
 
-            print sql_insert
+        # remove last comma
+        sql_insert = sql_insert[:-1]
+        sql_insert += ")"
 
+        print sql_insert
 
 
     ### ################################
@@ -232,9 +238,6 @@ def make_ap_sql_record(ap_header,ap_data):
     # ---------
     # Insert client data into SQL database, using proper types
 
-    for client_dat in client_data:
-
-        pass
 
     a = 0
 

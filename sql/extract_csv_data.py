@@ -30,6 +30,7 @@ def extract_csv_data(csv_file):
         # Client information
         client_header = lines[breaks[1]+1]
         client_data   = lines[breaks[1]+2:breaks[2]-1]
+
     except IndexError:
         print("\n\nERROR: This file does not seem to be from the airodump-ng command.\n")
         exit(1)
