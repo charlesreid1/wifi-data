@@ -2,13 +2,13 @@ This folder contains files for converting CSV files to SQL records.
 
 ### Driver
 
-The user will run one Python file: 
-
-`process_csv_files.py` is the main driver. Specify your CSV file directory when you run the script:
+The user only needs to run one Python file, the driver, which is `process_csv_files.py`. When you run the script, you specify the location of your csv files:
 
 ```
-process_csv_files.py ../csv_files/
+$ process_csv_files.py ../csv_files/
 ```
+
+This driver will call functions contained in other files.
 
 ### Functions
 
