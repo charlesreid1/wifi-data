@@ -14,7 +14,7 @@ process_csv_files.py ../csv_files/
 
 Functions to help with the process are contained in two Python files:
 
-`extract_csv_data.py` contains the function `extact_csv_data()`function `extact_csv_data()`. 
+`extract_csv_data.py` contains the function `extact_csv_data()`. 
 This function splits and extracts airodump CSV file data and returns
 lists of strings. 
 

@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def extract_df(csv_file):
+def make_df(csv_file):
     """
     turn a csv file into a pandas dataframe
     """
@@ -56,8 +56,4 @@ def extract_df(csv_file):
 
     return ap_df, client_df
 
-
-
-
-client_df = extract_df('../csv/awesome-01.csv')
 

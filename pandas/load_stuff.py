@@ -1,27 +1,26 @@
 import os
 import sys
-from extract_csv_data import extract_csv_data
-from make_sql_record import make_ap_sql_record, make_client_sql_record
+from make_df import make_df
 
 """
-process_csv_files.py
+load_stuff.py
 
 Usage:
 
-    $ python process_csv_files.py [path to csv files]
+    $ python load_stuff.py [path to csv files]
 
-This turns CSV files into SQL records and puts them into the file wifidata.db.
+This turns CSV files into Pandas DataFrames for easier analysis.
 
-It automatically splits the CSV file into AP data and client data,
-extracts field names, and creates SQL records for each line in the 
-CSV file.
+Each CSV file is turned into two DataFrames, one for 
+access point (AP) data and one for client data.
 
-The code to process, split, and tokenize the CSV files is 
-in extract_csv_data.py.
+The code to process, split, and tokenize the CSV files and turn them
+into Pandas DataFrames is in make_df.py.
 
 The code to turn the extracted CSV data into SQL records 
 is in make_sql_record.py.
 """
+
 
 
 def main(csv_directory):
@@ -39,17 +38,12 @@ def main(csv_directory):
         print("\n\nERROR: No CSV files found in folder %s\n"%(csv_directory))
         sys.exit(1)
 
+    i=0
     for csv_file in csv_files:
-
-        print("Extracting data from %s"%(csv_file))
-
-        ap_header, ap_data, client_header, client_data = extract_csv_data(csv_directory+'/'+csv_file)
-
-        # Turn the AP data into SQL records
-        make_ap_sql_record( ap_header, ap_data )
-
-        # Turn the client data into SQL records
-        make_client_sql_record( client_header, client_data )
+        print("Extracting data frame from %s"%(csv_file))
+        ap_df, client_df = make_df(csv_directory+'/'+csv_file) 
+        print client_df.shape
+        i=i+1
 
     print("Finished extracting all data.")
 
@@ -68,6 +62,7 @@ def usage():
     print("For example, if my CSV files are in /foo/bar, I should run:\n")
     print("  $ python process_csv_files.py /foo/bar")
     print("\n----------------------------")
+
 
 
 if __name__=="__main__":
