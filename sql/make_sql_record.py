@@ -29,11 +29,6 @@ def make_ap_sql_record(ap_header,ap_data):
 
     db_file = 'wifidata.db'
 
-    # Check if database exists/if table needs to be created
-    print("Kiss it goodbye.")
-    os.system('rm -f %s'%(db_file))
-
-
 
     # Tokenize the AP column headers (i.e., chop it up at the commas)
     # This returns a list of tokens.
@@ -99,7 +94,7 @@ def make_ap_sql_record(ap_header,ap_data):
             types[key] = 'TEXT'
 
 
-    if True:
+    try:
 
         print("Creating table...")
 
@@ -125,7 +120,7 @@ def make_ap_sql_record(ap_header,ap_data):
 
         c.execute(sql_create_table)
 
-    else:
+    except sqlite3.OperationalError:
         print("Skipping table creation...\n")
 
     # Done creating the table.
@@ -203,10 +198,6 @@ def make_client_sql_record(client_header,client_data):
 
     db_file = 'wifidata.db'
 
-    # Check if database exists/if table needs to be created
-    print("Kiss it goodbye.")
-    os.system('rm -f %s'%(db_file))
-
 
 
     # Tokenize the AP column headers (i.e., chop it up at the commas)
@@ -267,7 +258,7 @@ def make_client_sql_record(client_header,client_data):
             types[key] = 'TEXT'
 
 
-    if True:
+    try:
 
         print("Creating table...")
 
@@ -293,7 +284,7 @@ def make_client_sql_record(client_header,client_data):
 
         c.execute(sql_create_table)
 
-    else:
+    except sqlite3.OperationalError:
         print("Skipping table creation...\n")
 
     # Done creating the table.
