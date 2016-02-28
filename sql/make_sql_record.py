@@ -330,11 +330,14 @@ def make_client_sql_record(client_header,client_data):
                 value_string = client_tokens[ix]
 
             elif column_type=='TEXT':
-                temp_string = client_tokens[ix]
-                temp_string = temp_string.replace('\"','')
-                temp_string = temp_string.replace('\'','')
+                try:
+                    temp_string = client_tokens[ix]
+                    temp_string = temp_string.replace('\"','')
+                    temp_string = temp_string.replace('\'','')
 
-                value_string = "'"+temp_string+"'"
+                    value_string = "'"+temp_string+"'"
+                except IndexError:
+                    pass
 
             sql_insert += value_string + ","
 
