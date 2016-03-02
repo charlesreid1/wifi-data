@@ -14,8 +14,6 @@ subprocess.call(monitor1)
 subprocess.call(monitor2)
 subprocess.call(monitor3)
 
-print "Don't forget to put your wireless card in monitor mode.\n"
-
 for i in range(10):
 
     print "Beginning round",i+1,"of 10"
