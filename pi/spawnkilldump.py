@@ -14,13 +14,11 @@ subprocess.call(monitor1)
 subprocess.call(monitor2)
 subprocess.call(monitor3)
 
-print "Don't forget to put your wireless card in monitor mode.\n"
-
 for i in range(10):
 
     print "Beginning round",i+1,"of 10"
 
-    the_cmd = ['airodump-ng','wlan0','-w','awesome','--output-format','csv','-M']#,'--berlin','%d'%(Nsec),'wlan1']
+    the_cmd = ['airodump-ng','wlan0','-w','awesome','--output-format','csv','-M']
 
     print " ".join(the_cmd)
 
