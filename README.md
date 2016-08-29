@@ -13,17 +13,21 @@ This data will be collected on a server, and processed and analyzed.
 As part of the proejct we will be looking at the time-evolving picture
 of wireless network traffic in a given location.
 
-## Code Overview
+## Task Overview
 
-The breakdown of tasks:
-* Control antenna rotator and wifi antenna
-* Collect wifi data onboard the sensor
-* Copy data to C2 server
-* Process CSV files 
+The task of implementing an internet of things thing to collect and process
+wifi data can be broken down into the following subtasks: 
+* (Future work) Control an antenna rotator 
+* Control the wifi antennas (monitor mode, join networks, etc.)
+* Collect wifi data onboard the thing
+* Copy data to a command and control (C2) server
+* Process the resulting data
 
+## Directories
 
-
-
-
-
+Scripts related to each individual task are in folders:
+* `antenna/` - scripts for controlling the antenna mode and antenna rotator 
+* `collect/` - scripts for collecting data from the wifi interface
+* `exfiltrate/` - scripts for exfiltrating data to a command and control server
+* `processing/` - scripts for processing resulting wifi data
 
