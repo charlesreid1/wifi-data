@@ -71,7 +71,7 @@ def parse_ap_client_data( csv_file ):
                         txt_list[k] = ';'
 
                 # recombine char list into a string
-                ''.join(txt_list)
+                txt = ''.join(txt_list)
 
                 f.write("%s\n" % txt )
     
