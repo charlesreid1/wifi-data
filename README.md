@@ -17,10 +17,9 @@ of wireless network traffic in a given location.
 
 The task of implementing an internet of things thing to collect and process
 wifi data can be broken down into the following subtasks: 
-* (Future work) Control an antenna rotator 
 * Control the wifi antennas (monitor mode, join networks, etc.)
 * Collect wifi data onboard the thing
-* Copy data to a command and control (C2) server
+* Copy data to a home server 
 * Process the resulting data
 
 ## Directories
@@ -28,6 +27,6 @@ wifi data can be broken down into the following subtasks:
 Scripts related to each individual task are in folders:
 * `antenna/` - scripts for controlling the antenna mode and antenna rotator 
 * `collect/` - scripts for collecting data from the wifi interface
-* `exfiltrate/` - scripts for exfiltrating data to a command and control server
+* `extract/` - scripts for extraction of data to home server
 * `processing/` - scripts for processing resulting wifi data
 

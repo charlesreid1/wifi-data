@@ -15,9 +15,11 @@ Script `AircrackIntervals.py`:
 ## Scapy
 
 Airoscapy is an aircrack-style clone for scanning nearby wifi networks
-and clients, written using Python's Scapy library. This allows more 
-flexibility in customizing how the packets are read, what particular 
-information is kept, and how the information is ultimately used.
+and clients, written using Python's Scapy library. 
 
+Using scapy allows for more flexibility in what data is generated.
+Unlike aircrack-ng, which makes decisinos about what data 
+to extract and dsiplay or throw away, scapy allows you to 
+customize what you want.
 
 
