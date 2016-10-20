@@ -1,6 +1,6 @@
 # Antenna
 
-Scripts for controlling the wifi antennas and the antenna rotator.
+Scripts for controlling the wifi antennas.
 
 ## Tasks
 
@@ -10,11 +10,11 @@ we be able to script.
 The first is joining a wireless network. We'll want to be able to look for 
 particular trusted wireless networks or open wireless networks, and use 
 a USB wifi dongle to connect to those wireless networks. This will allow us
-to set up a connection back to the C2 server.
+to set up a connection back to the home server.
 
 The second is putting the (directional) wireless antenna into monitor mode.
-This is important to do on boot, as the antenna will not start in this mode.
-
+This is important to do on boot, as the antenna will not start in this mode
+by default.
 
 ## Joining Wifi Networks
 
