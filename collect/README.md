@@ -5,7 +5,9 @@ These scripts primarily rely on aircrack and its built-in wifi parsing
 capabilities, but this can also be done with Scapy or another specialized
 tool. Aircrack is simply the easiest route.
 
-## MonitorMode
+## MonitorMode.py
+
+Script `MonitorMode.py`:
 
 MonitorMode uses the [Scapy](http://www.secdev.org/projects/scapy/) library 
 to access raw packets directly. This is also based on [wifijammer](https://github.com/DanMcInerney/wifijammer) by Dan McInerney.
@@ -13,7 +15,7 @@ to access raw packets directly. This is also based on [wifijammer](https://githu
 This currently prints out packet info, but can be modified to filter packets
 and process information or statistics to put into a database or etc.
 
-## Aircrack
+## AircrackIntervals.py
 
 Script `AircrackIntervals.py`:
 * A script to collect data from the interface. 
