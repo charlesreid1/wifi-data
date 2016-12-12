@@ -1,5 +1,6 @@
 '''
 Slightly modified version of Dan McInerney's script wifijammer
+(see line 331)
 
 https://github.com/DanMcInerney/wifijammer
 
